@@ -1,4 +1,7 @@
 import React from 'react';
+// import { w3cwebsocket as W3CWebSocket } from 'websocket';
+
+// const client = new W3CWebSocket('ws://127.0.0.1:8000');
 
 function TicTacToe() {
     function Square(props) {
@@ -72,7 +75,12 @@ function TicTacToe() {
     }
 
     class Game extends React.Component {
-    render() {
+        // componentDidMount() {
+        //     client.onopen = () => {
+        //         console.log('WebSocket Client Connected');
+        //     }
+        // }
+        render() {
         return (
         <div className="game">
             <div className="game-board">
