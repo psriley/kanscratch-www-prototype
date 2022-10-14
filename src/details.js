@@ -1,7 +1,8 @@
 import React from "react";
+import placeholder from './placeholder.png'
 import { Link } from "react-router-dom";
   
-const LogIn = () => {
+const Details = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -25,10 +26,14 @@ const LogIn = () => {
             <div className="btn navigation">Scratch Website</div>
           </a>
         </div>
-        <h1 className="title">Log in</h1>
+        <h1 className="title">Assignment Details</h1>
+        <div className="Container">
+            <img id="assignment" src={placeholder}/>
+            <p>These are the details</p>
+        </div>
       </header>
     </div>
   );
 };
   
-export default LogIn;
+export default Details;

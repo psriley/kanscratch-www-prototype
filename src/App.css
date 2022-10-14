@@ -3,7 +3,12 @@
 }
 
 img {
-  width: 5vw;
+  width: 80%;
+  height: 80%;
+}
+
+.Assignments img {
+  width: 20%;
 }
 
 .App {
@@ -80,7 +85,7 @@ img {
 .Topbar {
   position: fixed;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2vw;
   top: 6vh;
   width: 100vw;
@@ -114,8 +119,10 @@ button :hover {
   background: black;
 }
 
-.logo {
-  position: fixed;
-  top: 1vh;
-  font-family: madeSunflower;
+a:visited .logo {
+  color: #ff9800;
+}
+
+img#assignment {
+  width: 20vw;
 }

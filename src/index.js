@@ -6,6 +6,7 @@ import About from './about'
 import SignUp from './signup'
 import LogIn from './login'
 import Profile from './profile'
+import Details from './details'
 import reportWebVitals from './reportWebVitals';
 import TicTacToe from './ticTacToe';
 import {
@@ -27,6 +28,7 @@ root.render(
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/login" element={<LogIn/>} />
       <Route path="/profile" element={<Profile/>} />
+      <Route path="/details" element={<Details/>} />
     </Routes>
   </Router>
 );

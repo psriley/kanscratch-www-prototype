@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="logo">KanScratch</div>
         <div className="Topbar">
+          <Link to="/">
+            <div className="logo">KanScratch</div>
+          </Link>
           <Link to="/about">
             <div className="btn navigation">About</div>
           </Link>
@@ -30,21 +32,27 @@ function App() {
           <div className="Container">
               <div className="Classrooms">
                 Classrooms
-                <div style={{border: "2px solid red", width: "fit-content", height: "fit-content"}}>
-                  Looks like you aren't in any classrooms yet.
+                <div style={{display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
+                  Looks like you don't have any classrooms yet.
                 </div>
               </div>
               <div className="Assignments">
                 Assignments
-                <div style={{border: "2px solid red", height: "50%"}}>
-                  Looks like you don't have any assignments yet.
+                <div style={{gap: "2vh", display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
+                  <img src={placeholder}/>
+                  <img src={placeholder}/>
+                  <img src={placeholder}/>
                 </div>
               </div>
           </div>
           <div>
             <div className="AssignmentView">
-              Placeholder for assignment
-              <img src={placeholder}/>
+              <div>
+                Details
+                <Link to="/details">
+                  <img src={placeholder}/>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
