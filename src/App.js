@@ -28,30 +28,32 @@ function App() {
             <div className="btn navigation">Scratch Website</div>
           </a>
         </div>
-        <div className="Container">
+        <div className="Content">
           <div className="Container">
-              <div className="Classrooms">
-                Classrooms
-                <div style={{display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
-                  Looks like you don't have any classrooms yet.
+            <div className="Container">
+                <div className="Classrooms">
+                  Classrooms
+                  <div style={{display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
+                    Looks like you don't have any classrooms yet.
+                  </div>
                 </div>
-              </div>
-              <div className="Assignments">
-                Assignments
-                <div style={{gap: "2vh", display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
-                  <img src={placeholder}/>
-                  <img src={placeholder}/>
-                  <img src={placeholder}/>
+                <div className="Assignments">
+                  Assignments
+                  <div style={{gap: "1vh", display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
+                    <img src={placeholder}/>
+                    <img src={placeholder}/>
+                    <img src={placeholder}/>
+                  </div>
                 </div>
-              </div>
-          </div>
-          <div>
-            <div className="AssignmentView">
-              <div>
-                Details
-                <Link to="/details">
-                  <img src={placeholder}/>
-                </Link>
+            </div>
+            <div>
+              <div className="AssignmentView">
+                <div>
+                  Details
+                  <Link to="/details">
+                    <img src={placeholder}/>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

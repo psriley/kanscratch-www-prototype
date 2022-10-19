@@ -8,7 +8,7 @@ img {
 }
 
 .Assignments img {
-  width: 20%;
+  width: 40%;
 }
 
 .App {
@@ -79,7 +79,6 @@ img {
 .Container {
   display: flex;
   gap: 5vw;
-  height: 40vh;
 }
 
 .Topbar {
@@ -124,5 +123,10 @@ a:visited .logo {
 }
 
 img#assignment {
-  width: 20vw;
+  width: 40vw;
+}
+
+.Page {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
