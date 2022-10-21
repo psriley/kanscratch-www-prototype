@@ -32,17 +32,13 @@ function App() {
           <div className="Container">
             <div className="Container">
                 <div className="Classrooms">
-                  <div style={{marginBottom: "10px"}}>
-                    Classrooms
-                  </div>
+                  Classrooms
                   <div style={{display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
                     Looks like you don't have any classrooms yet.
                   </div>
                 </div>
                 <div className="Assignments">
-                  <div style={{marginBottom: "10px"}}>
-                    Assignments
-                  </div>
+                  Assignments
                   <div style={{gap: "1vh", display: "flex", flexWrap: "wrap", flexDirection: "column", border: "2px solid red"}}>
                     <img src={placeholder}/>
                     <img src={placeholder}/>
@@ -51,11 +47,9 @@ function App() {
                 </div>
             </div>
             <div>
-              <div className="AssignmentView" style={{padding: "6vw"}}>
+              <div className="AssignmentView">
                 <div>
-                  <div style={{marginBottom: "10px"}}>
-                    Details
-                  </div>
+                  Details
                   <Link to="/details">
                     <img src={placeholder}/>
                   </Link>
