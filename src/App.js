@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import logo from './images/logo.svg';
 import TicTacToe from './ticTacToe.js';
-import placeholder from './placeholder.png'
+import placeholder from './images/placeholder.png'
 import './App.css';
 import { Link } from "react-router-dom";
 
