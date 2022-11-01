@@ -130,3 +130,12 @@ img#assignment {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+
+.inputBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.labelText {
+  text-align: left;
+}
