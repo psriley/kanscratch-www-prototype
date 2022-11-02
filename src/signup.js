@@ -1,5 +1,6 @@
-import React, {useState} from "react";
-import Select from 'react-select'
+import React, {useState, useEffect} from "react";
+import Select from 'react-select';
+import CreatableSelect from 'react-select/creatable';
 import { Link } from "react-router-dom";
 import Tbar from "./components/topbar";
 
@@ -31,14 +32,24 @@ function SignUp() {
 
     // Login info for users
     const database = [
-        {
+        useEffect(() => {
+          fetch('api/users')
+             .then((response) => response.json())
+             .then((data) => {
+                console.log(data);
+             })
+             .catch((err) => {
+                console.log(err.message);
+             });
+           }, []),
+        /*{
             username: "user1",
             password: "password"
         },
         {
             username: "user2",
             password: "password2"
-        },
+        },*/
     ];
 
     const errors = {
