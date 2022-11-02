@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
-import About from './about'
-import SignUp from './signup'
-import LogIn from './login'
-import Profile from './profile'
-import Details from './details'
+import About from './about';
+import SignUp from './signup';
+import LogIn from './login';
+import Profile from './profile';
+import Details from './details';
 import reportWebVitals from './reportWebVitals';
-import TicTacToe from './ticTacToe';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Redirect,
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

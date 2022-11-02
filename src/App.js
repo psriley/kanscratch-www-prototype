@@ -3,7 +3,7 @@ import TicTacToe from './ticTacToe.js';
 import placeholder from './images/placeholder.png'
 import './App.css';
 import { Link } from "react-router-dom";
-import Tbar from "./topbar";
+import Tbar from "./components/topbar";
 
 function App() {
   return (

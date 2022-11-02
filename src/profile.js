@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Tbar from "./topbar.js";
+import Tbar from "./components/topbar.js";
   
 const Profile = () => {
   return (
