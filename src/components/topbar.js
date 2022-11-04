@@ -19,7 +19,7 @@ function Tbar(props){
             <Link to="/profile">
             <div className="btn navigation">Profile</div>
             </Link>
-            <a href="https://scratch.mit.edu/" target="_blank">
+            <a href="src/components/topbar" target="_blank">
             <div className="btn navigation">Scratch Website</div>
             </a>
         </div>
