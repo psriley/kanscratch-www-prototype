@@ -32,24 +32,24 @@ function SignUp() {
 
     // Login info for users
     const database = [
-        useEffect(() => {
-          fetch('api/users')
-             .then((response) => response.json())
-             .then((data) => {
-                console.log(data);
-             })
-             .catch((err) => {
-                console.log(err.message);
-             });
-           }, []),
-        /*{
+        // useEffect(() => {
+        //   fetch('api/users')
+        //      .then((response) => response.json())
+        //      .then((data) => {
+        //         console.log(data);
+        //      })
+        //      .catch((err) => {
+        //         console.log(err.message);
+        //      });
+        //    }, []),
+        {
             username: "user1",
             password: "password"
         },
         {
             username: "user2",
             password: "password2"
-        },*/
+        },
     ];
 
     const errors = {
@@ -129,7 +129,7 @@ function SignUp() {
                 <Tbar/>
                 <div className="login-form">
                     <div className="title">Sign Up</div>
-                    {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+                    {isSubmitted ? <div>User successfully signed up</div> : renderForm}
                 </div>
             </header>
         </div>
