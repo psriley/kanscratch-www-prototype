@@ -1,0 +1,13 @@
+services:
+  api:
+    build: ./mysite
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./mysite:/mysite
+    command: bash -c "python3 manage.py runserver 0.0.0.0:8000"
+
+  web:
+    build: .
+    ports:
+      - "3000:3000"
